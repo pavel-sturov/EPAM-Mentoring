@@ -9,8 +9,8 @@
 <h3>Previous work experience:</h3>
 <ul>
   <li>Madmed bar (2017 - now)</li>
-  <li>Grand cafe (2014 - 1016)</li>
   <li>Opera Casino (2016 - 2017)</li>
+  <li>Grand cafe (2014 - 1016)</li>
   <li>Amazon (202? - 202?)</li>
   </ul>
 
