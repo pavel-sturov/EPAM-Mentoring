@@ -8,7 +8,7 @@
 <p>phone - +375(33)900-88-99 MTS</p>
 <h3>Previous work experience:</h3>
 <ul>
-  <li>Madmed bar (2017 - now)</li>
+  <li>Madmen bar (2017 - now)</li>
   <li>Opera Casino (2016 - 2017)</li>
   <li>Grand cafe (2014 - 1016)</li>
   <li>Amazon (202? - 202?)</li>
