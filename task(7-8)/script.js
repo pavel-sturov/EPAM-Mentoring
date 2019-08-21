@@ -29,7 +29,7 @@ function toArray (obj) {
 }
 
 
-// ----------------- Necessary methods for work with Lodash -----------------------
+// ----------------- Necessary methods to work with Lodash -----------------------
 
 
 function remakeValue(value) {                    // -- Main method for remake value
@@ -68,7 +68,7 @@ function isTrueObj(source) {                    // -- Remake Object
     }
 }
 
-// ------------ My Custom Lodash implement --------------------
+// ------------ My Custom Lodash implementation --------------------
 // ---------------------- Arrays ------------------------------
 // ---------------------- Chunk -------------------------------
 
