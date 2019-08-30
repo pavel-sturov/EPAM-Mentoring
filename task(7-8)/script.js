@@ -3,7 +3,7 @@ Array.prototype.push = function() {
     for (let i = 0; i < arguments.length; i ++) {
         this[this.length] = arguments[i];
     }
-    return this;
+    return this.length;
 };
 
 Array.prototype.slice = function(start, end = this.length) {
@@ -20,16 +20,17 @@ String.prototype.search = function (reg) {
     }
 };
 
-function toArray (obj) {
+Array.prototype.toArray = function () {
     let temp = [];
-    for (let el in obj) {
-        temp.push(obj[el]);
+    for (let el in this) {
+        temp.push(this[el]);
     }
     return temp;
-}
+};
 
 
-// ----------------- Necessary methods to work with Lodash -----------------------
+
+// ----------------- Necessary methods for work with Lodash -----------------------
 
 
 function remakeValue(value) {                    // -- Main method for remake value
@@ -44,9 +45,7 @@ function remakeValue(value) {                    // -- Main method for remake va
     }
 }
 
-function prop(path) {                           // -- Remake String
-    return (obj) => obj[path];
-}
+const prop = path => obj => obj[path];                            // -- Remake String
 
 function isTrueArr(path, srcValue) {           // -- Remake Array
     return (object) => {
@@ -68,7 +67,7 @@ function isTrueObj(source) {                    // -- Remake Object
     }
 }
 
-// ------------ My Custom Lodash implementation --------------------
+// ------------ My Custom Lodash implement --------------------
 // ---------------------- Arrays ------------------------------
 // ---------------------- Chunk -------------------------------
 
@@ -93,7 +92,7 @@ function chunk (arr, size = 1) {
 function compact(array) {
     let result = [];
     for (let i = 0; i < array.length; i ++) {
-        if (!!array[i] !== false) {
+        if (!!array[i]) {
             result.push(array[i]);
         }
     }
@@ -183,7 +182,7 @@ function includes(collection, value, fromIndex = 0) {
     }
 
     else {
-        let values = toArray(collection).slice(fromIndex);
+        let values = collection.toArray().slice(fromIndex);
 
         for (let i = 0; i < values.length; i ++) {
             if (values[i] === value) {
@@ -193,6 +192,8 @@ function includes(collection, value, fromIndex = 0) {
     }
     return false;
 }
+
+
 
 
 // -------------------------- Map -----------------------------------
@@ -215,8 +216,7 @@ function map(collection, value) {
 // ------------------------ Zip ---------------------------------
 
 
-function zip() {
-    let arg = [...arguments];
+function zip(...arg) {
     let result = [];
     let innerArrayIndex = 0;
     let tempArray = [];
