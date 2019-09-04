@@ -6,7 +6,7 @@ function createLayout() {
     const resultWindow = createElement('div', 'resultWindow');
     const header = createElement('h1');
     const header2 = createElement('h2');
-    const img = document.createElement('img');
+    const img = createElement('img');
     const body = document.querySelector('body');
 
     const citiesContainer = [];
