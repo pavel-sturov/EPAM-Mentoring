@@ -1,9 +1,4 @@
-let items = [
-    {
-        tagName: 'div',
-        classes: 'wrapper',
-        text : '',
-    },
+const items = [
     {
         tagName : 'div',
         classes : 'item',
@@ -25,47 +20,45 @@ let items = [
         text : 'ON DEMAND',
     }];
 
-items.map((el, index) => {
+const wrapper = document.createElement('div');
+wrapper.classList.add('wrapper');
+document.body.appendChild(wrapper);
+
+items.forEach((el) => {
     let elem = document.createElement(el.tagName);
     elem.classList.add(el.classes);
     elem.innerText = el.text;
-    if (index === 0) {
-        document.body.appendChild(elem);
-    }
-    if (index > 0) {
-        document.querySelector('.wrapper').appendChild(elem);
-    }
+    wrapper.appendChild(elem);
 });
 
-document.querySelector('.item').classList.add('active');
-
+const elements = document.querySelectorAll('.item');
+elements[0].classList.add('active');
 
 document.onkeydown = move;
 let counter = 0;
 
 function move(e) {
-    let items = document.querySelectorAll('.item');
     e = window.event;
 
     if (e.keyCode === 37) {      //left
-        items[counter].classList.remove('active');
+        elements[counter].classList.remove('active');
         if (counter === 0) {
             counter = 3;
         }
         else {
             counter -= 1;
         }
-        items[counter].classList.add('active');
+        elements[counter].classList.add('active');
     }
 
     if (e.keyCode === 39) {      //right
-        items[counter].classList.remove('active');
+        elements[counter].classList.remove('active');
         if (counter === 3) {
             counter = 0;
         }
         else {
             counter += 1;
         }
-        items[counter].classList.add('active');
+        elements[counter].classList.add('active');
     }
 }
