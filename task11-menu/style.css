@@ -1,0 +1,25 @@
+body {
+    background: #f8f7fa;
+    font-family: 'Hepta Slab', serif;
+}
+
+.item {
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.wrapper {
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 485px;
+    border: 1px solid #6a6a6a;
+
+}
+
+.active {
+    color: #7fcd36;
+    text-decoration: underline;
+}
