@@ -4,11 +4,11 @@
 <h4>Implementation Chat UI with web socket</h4>
 
 
-<h4>This is the main page, where you can to log in</h4>
+<h4>This is the main page, where you can log in</h4>
 
 ![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/start.png)
 
-<h4>This is the online page, where you can to send message</h4>
+<h4>This is the online page, where you can send message</h4>
 
 ![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/online.png)
 
