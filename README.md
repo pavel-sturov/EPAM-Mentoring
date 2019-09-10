@@ -16,7 +16,7 @@
 
 ![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/scroll-btn.png) 
 
-<h4>Chat looks like this, if you press "Disconnect"</h4>
+<h4>Chat looks like this, if you press "Disconnect". Message input and button “Send message” is hidden.</h4>
 
 ![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/offline.png)
 
