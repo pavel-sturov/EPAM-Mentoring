@@ -8,9 +8,7 @@ function createElement(tag, classes) {
     if (classes) {
         elem.classList.add(classes);
     }
-
     return elem;
-
 }
 
 export { appendElements, createElement };
