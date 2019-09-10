@@ -21,7 +21,6 @@ function ChatController () {
 
     //INTERVAL TO HIDE/SHOW SCROLL DOWN BUTTON
     setInterval(() => {
-        console.log(this.ws.readyState);
         this.messageArea.displayScrollDownBtn();
     }, 200);
 }
