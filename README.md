@@ -5,13 +5,14 @@
 
 
 <h4>This is the main page, where you can to log in</h4>
-![main](/Task12/readme/start.png)  
+
+![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/start.png)
 
 <h4>This is the online page, where you can to send message</h4>
-![main](/Task12/readme/online.png)  
+![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/online.png)  
 
 <h4>When you scroll up, button "To scroll down" is avalible</h4>
-![main](/Task12/readme/scroll-btn.png)  
+![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/scroll-btn.png)  
 
 <h4>Chat looks loke this, if you log out</h4>
-![main](/Task12/readme/offline.png)
+![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/offline.png)
