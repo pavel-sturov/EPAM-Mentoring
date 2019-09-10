@@ -16,6 +16,6 @@
 
 ![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/scroll-btn.png);  
 
-<h4>Chat looks loke this, if you log out</h4>
+<h4>Chat looks like this, if you log out</h4>
 
 ![Image alt](https://github.com/pavel-sturov/EPAM-Mentoring/raw/Task12-Chat-UI/Task12/readme/offline.png);
