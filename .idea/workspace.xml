@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac8e8313-faec-442c-8a80-5109e1412dfe" name="Default" comment="add .gitignore file and fix typo in readme">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task12/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Task12/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,8 +24,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="156">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -110,7 +108,7 @@
       <path value="$PROJECT_DIR$/Task12/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="799" />
     <option name="height" value="803" />
@@ -128,6 +126,11 @@
               <item name="EPAM-Mentoring" type="b2602c69:ProjectViewProjectNode" />
               <item name="EPAM-Mentoring" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="EPAM-Mentoring" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EPAM-Mentoring" type="462c0819:PsiDirectoryNode" />
+              <item name="Task12" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -144,8 +147,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Task12" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Task12" />
       <recent name="$PROJECT_DIR$/Task9-11" />
       <recent name="$PROJECT_DIR$/task11/src/js" />
       <recent name="$PROJECT_DIR$/task4-5/src/js" />
@@ -192,7 +195,7 @@
       <workItem from="1567440982011" duration="534000" />
       <workItem from="1567505511428" duration="20341000" />
       <workItem from="1567548764536" duration="9885000" />
-      <workItem from="1568111174658" duration="592000" />
+      <workItem from="1568111174658" duration="837000" />
     </task>
     <task id="LOCAL-00001" summary="add .gitignore file and fix typo in readme">
       <created>1564603202467</created>
@@ -205,20 +208,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50366000" />
+    <option name="totallyTimeSpent" value="50611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="799" height="803" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="803" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.48843187" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26779422" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.45885286" />
       <window_info anchor="bottom" id="Run" order="5" weight="0.5957768" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3861237" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3861237" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -334,7 +336,7 @@
     <entry file="file://$PROJECT_DIR$/Task9-11/.babelrc" />
     <entry file="file://$PROJECT_DIR$/task11/src/index.html" />
     <entry file="file://$PROJECT_DIR$/task11-autocomplete/src/index.html" />
-    <entry file="file://$PROJECT_DIR$/Task12/.gitignore">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
@@ -346,8 +348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="156">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
