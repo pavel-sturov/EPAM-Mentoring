@@ -1,12 +1,12 @@
 const path = require('path');
 module.exports = {
     entry: {
-        app: './src/js/index.js'
+        app: './Task12/src/js/index.js'
     },
 
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, './Task12/dist'),
         publicPath: '/dist'
     },
     module: {
