@@ -1,0 +1,16 @@
+{
+  "name": "bst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Sturov Pavel",
+  "license": "ISC"
+}
