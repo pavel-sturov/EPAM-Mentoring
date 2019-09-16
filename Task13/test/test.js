@@ -28,6 +28,7 @@ describe("BST.insert(data, key)", function() {
         assert(BST.root().left.key === 'forty');
         assert(BST.root().right.key === 'seventy');
     });
+
     it("Method should be chainable.", function() {
         const BST = new BinarySearchTree();
         BST.insert(50, 'fifty').insert(70, 'seventy').insert(40, 'forty');
@@ -54,6 +55,7 @@ describe("BST.delete(key)", function() {
 
         assert(BST.traverse(true).join('') === [40, 10, 50, 60].join(''));
     });
+
     it("Delete 'element10' should return [40, 30, 50, 60].", function() {
         const BST = new BinarySearchTree();
         elements.forEach(el => BST.insert(el, 'element' + el));
@@ -61,6 +63,7 @@ describe("BST.delete(key)", function() {
 
         assert(BST.traverse(true).join('') === [40, 30, 50, 60].join(''));
     });
+
     it("Method should be chainable.", function() {
         const BST = new BinarySearchTree();
         elements.forEach(el => BST.insert(el, 'element' + el));
@@ -94,6 +97,7 @@ describe("BST.contains(value)", function() {
         assert(BST.contains(10) === true);
         assert(BST.contains(30) === true);
     });
+
     it("If the value is not in BST, method should return false.", function() {
         const BST = new BinarySearchTree();
         elements.forEach(el => BST.insert(el, 'element' + el));
@@ -103,7 +107,6 @@ describe("BST.contains(value)", function() {
     });
 });
 
-
 describe("BST.traverse(order)", function() {
     it("If order is true, method should return [40, 30, 10, 50, 60].", function() {
         const BST = new BinarySearchTree();
@@ -111,6 +114,7 @@ describe("BST.traverse(order)", function() {
 
         assert(BST.traverse(true).join('') === [40, 30, 10, 50, 60].join(''));
     });
+
     it("If order is false, method should return [10, 30, 60, 50, 40].", function() {
         const BST = new BinarySearchTree();
         elements.forEach(el => BST.insert(el, 'element' + el));
@@ -126,6 +130,7 @@ describe("BST.verify()", function() {
 
         assert(BST.verify() === true);
     });
+
     it("If we do BST._root.left.data = 100, method should return false.", function() {
         const BST = new BinarySearchTree();
         elements.forEach(el => BST.insert(el, 'element' + el));
