@@ -149,6 +149,7 @@ class BinarySearchTree {
     clear() {
         return this._root = null;
     }
+
     traverse(value) {
         if (!this._root) {
             return null;
