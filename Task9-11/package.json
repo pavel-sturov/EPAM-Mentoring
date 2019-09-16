@@ -1,0 +1,35 @@
+{
+  "name": "epam-mentoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavel-sturov/EPAM-Mentoring.git"
+  },
+  "author": "Pavel Sturov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavel-sturov/EPAM-Mentoring/issues"
+  },
+  "homepage": "https://github.com/pavel-sturov/EPAM-Mentoring#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "path": "^0.12.7",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
