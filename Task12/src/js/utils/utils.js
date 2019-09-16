@@ -13,13 +13,16 @@ function createElement (tag, classes) {
 
 function getTime (mlsc) {
     const time = new Date(mlsc);
-
     let hours = time.getHours();
     let minutes = time.getMinutes();
 
-    if (minutes < 10) { minutes = '0' + minutes }
+    if (minutes < 10) {
+        minutes = '0' + minutes;
+    }
 
-    if (hours < 10) { hours = '0' + hours }
+    if (hours < 10) {
+        hours = '0' + hours;
+    }
 
     return `${hours} : ${minutes}`;
 }
