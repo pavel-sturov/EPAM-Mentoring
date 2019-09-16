@@ -1,5 +1,5 @@
 const assert = require('assert');
-const BinarySearchTree = require('../script');
+const BinarySearchTree = require('../src/script');
 let elements = [40, 50, 30, 10, 60];
 
 describe("BST.root()", function() {
@@ -130,7 +130,7 @@ describe("BST.verify()", function() {
         const BST = new BinarySearchTree();
         elements.forEach(el => BST.insert(el, 'element' + el));
         BST._root.left.data = 100;
-        
+
         assert(BST.verify() === false);
     });
 });

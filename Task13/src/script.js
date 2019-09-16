@@ -14,7 +14,6 @@ class BinarySearchTree {
 
     root() {
         return this._root;
-        //`Root: ${this._root.data}, Root Left: ${this._root.left.data}, Root Right: ${this._root.right.data}.`;
     }
 
     insert(data, key) {
@@ -47,6 +46,7 @@ class BinarySearchTree {
 
     delete(key) {
         let valueOfRemoveElement = this.search(key).data;
+
         function deleteNode (node, key) {
             if (key === node.key) {
                 if (!node.left && !node.right) {
@@ -108,6 +108,7 @@ class BinarySearchTree {
             return null;
         } else {
             let result = null;
+
                 function searchKey(node, key) {
                         if (node.key === key) {
                             result = node;
@@ -118,7 +119,6 @@ class BinarySearchTree {
                 searchKey(this._root, key);
             return result;
         }
-
     }
 
     verify() {
@@ -155,6 +155,7 @@ class BinarySearchTree {
         }
         else {
             let result = [];
+
             if (value) {
                 function preOrder(node) {
                     result.push(node.data);
@@ -202,12 +203,5 @@ class BinarySearchTree {
         }
     }
 }
-
-let BST = new BinarySearchTree();
-BST.insert(40, 'forty').insert(50, 'fifty').insert(30, 'thirty').insert(20, 'twenty');
-// BST._root.left.data = 100;
-// BST.delete('fifty').delete('thirty');
-console.log(JSON.stringify(BST));
-
 
 module.exports = BinarySearchTree;
