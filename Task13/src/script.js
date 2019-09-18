@@ -10,6 +10,35 @@ class Node {
 class BinarySearchTree {
     constructor() {
         this._root = null;
+        this.isVerifyTree = true;
+        this.requiredNode = null;
+
+        this.isVerify = function (node) {
+            if (node && node.left && node.right) {
+                if (node.data > node.left.data) {
+                    this.isVerify(node.left);
+                } else {
+                    this.isVerifyTree = false;
+                }
+                if (node.data < node.right.data) {
+                    this.isVerify(node.right);
+                } else {
+                    this.isVerifyTree = false;
+                }
+            }
+        };
+
+        this.searchKey = function(node, key) {
+            if (!node) {
+                return this.requiredNode;
+            } else {
+                if (node.key === key) {
+                    return this.requiredNode = node;
+                }
+                node.left && this.searchKey(node.left, key);
+                node.right && this.searchKey(node.right, key);
+            }
+        };
     }
 
     root() {
@@ -85,64 +114,33 @@ class BinarySearchTree {
         if (currentNode.data === value) {
             return true;
         }
-        else {
-            while (currentNode) {
-                if (value > currentNode.data && currentNode.right) {
-                    currentNode = currentNode.right;
-                }
-                if (value < currentNode.data && currentNode.left) {
-                    currentNode = currentNode.left;
-                }
-                if (value === currentNode.data) {
-                    return true;
-                }
-                if (value > currentNode.data && !currentNode.right || value < currentNode.data && !currentNode.left) {
-                    return false;
-                }
+        while (currentNode) {
+            if (value > currentNode.data && currentNode.right) {
+                currentNode = currentNode.right;
+            }
+            if (value < currentNode.data && currentNode.left) {
+                currentNode = currentNode.left;
+            }
+            if (value === currentNode.data) {
+                return true;
+            }
+            if (value > currentNode.data && !currentNode.right || value < currentNode.data && !currentNode.left) {
+                return false;
             }
         }
     }
 
     search(key) {
-        if (!this._root) {
-            return null;
-        } else {
-            let result = null;
-
-                function searchKey(node, key) {
-                        if (node.key === key) {
-                            result = node;
-                        }
-                        node.left && searchKey(node.left, key);
-                        node.right && searchKey(node.right, key);
-                }
-                searchKey(this._root, key);
-            return result;
-        }
+            this.searchKey(this._root, key);
+            return this.requiredNode;
     }
 
     verify() {
-        let result = true;
-
         if (!this._root) {
-            return result;
+            return this.isVerifyTree;
         } else {
-            function isVerify(node) {
-                if (node && node.left && node.right) {
-                    if (node.data > node.left.data) {
-                        isVerify(node.left);
-                    } else {
-                        result = false;
-                    }
-                    if (node.data < node.right.data) {
-                        isVerify(node.right);
-                    } else {
-                        result = false;
-                    }
-                }
-            }
-            isVerify(this._root);
-            return result;
+            this.isVerify(this._root);
+            return this.isVerifyTree;
         }
     }
 
@@ -204,5 +202,8 @@ class BinarySearchTree {
         }
     }
 }
+let x = new BinarySearchTree();
+console.log(x.search('ee'));
+// console.log(x);
 
 module.exports = BinarySearchTree;
