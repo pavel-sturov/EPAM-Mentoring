@@ -10,23 +10,7 @@ class Node {
 class BinarySearchTree {
     constructor() {
         this._root = null;
-        this.isVerifyTree = true;
         this.requiredNode = null;
-
-        this.isVerify = function (node) {
-            if (node && node.left && node.right) {
-                if (node.data > node.left.data) {
-                    this.isVerify(node.left);
-                } else {
-                    this.isVerifyTree = false;
-                }
-                if (node.data < node.right.data) {
-                    this.isVerify(node.right);
-                } else {
-                    this.isVerifyTree = false;
-                }
-            }
-        };
 
         this.searchKey = function(node, key) {
             if (!node) {
@@ -37,6 +21,22 @@ class BinarySearchTree {
                 }
                 node.left && this.searchKey(node.left, key);
                 node.right && this.searchKey(node.right, key);
+            }
+        };
+
+        this.isVerify = function (node) {
+            if (node && node.left && node.right) {
+                if (node.data > node.left.data) {
+                    this.isVerify(node.left);
+                } else {
+                    return false;
+                }
+                if (node.data < node.right.data) {
+                    this.isVerify(node.right);
+                } else {
+                    return false;
+                }
+                return true;
             }
         };
     }
@@ -137,10 +137,9 @@ class BinarySearchTree {
 
     verify() {
         if (!this._root) {
-            return this.isVerifyTree;
+            return true;
         } else {
-            this.isVerify(this._root);
-            return this.isVerifyTree;
+            return this.isVerify(this._root);
         }
     }
 
@@ -202,8 +201,5 @@ class BinarySearchTree {
         }
     }
 }
-let x = new BinarySearchTree();
-console.log(x.search('ee'));
-// console.log(x);
 
 module.exports = BinarySearchTree;
