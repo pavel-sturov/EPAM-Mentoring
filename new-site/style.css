@@ -1,27 +1,56 @@
-body {
+body, p{
     margin: 0;
     padding: 0;
 }
 
-header {
-    width: 800px;
-    height: 589px;
+.wdth-100 {
+    width: 100%;
+}
+
+.mrg-auto {
     margin: auto;
+}
+
+.dsp-flex {
+    display: flex;
+}
+
+.dncg-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+.rlw-font {
+    font-family: 'Raleway', sans-serif;
+}
+
+.ubu-font {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.muli-font {
+    font-family: 'Muli', sans-serif;
+}
+
+.sans-font {
+    font-family: 'PT Sans', sans-serif;
+}
+
+header {
     background-image: url("./img/main.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
 }
 
 .nav-bar {
-    text-align: center;
+    display: flex;
+    padding-left: 0;
+    width: 90%;
 }
 
 .nav-bar li{
     display: inline-block;
-    padding-right: 25px;
-    margin: auto;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
 }
 
@@ -31,7 +60,7 @@ h3, h1, a{
 }
 
 .elena {
-    padding: 50px 0 30px 0;
+    padding-bottom: 20px;
     font-family: 'Niconne', cursive;
     font-size: 50px;
     text-align: center;
@@ -39,30 +68,28 @@ h3, h1, a{
 }
 
 .good-day {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 60px;
-    margin: 60px 0 30px 0;
+    font-size: 30px;
+    margin: 40px 0;
 }
 
 .themeforest {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .left-line, .right-line {
     display: inline-block;
     vertical-align: middle;
-    width: 100px;
+    width: 20%;
     height: 2px;
     background: #447774;
 }
 
 .right-line {
-    margin-left: 40px;
+    margin-left: 3%;
 }
 
 .left-line {
-    margin-right: 40px;
+    margin-right: 3%;
 }
 
 a {
@@ -71,16 +98,15 @@ a {
 
 .get-copy, .read-more {
     display: block;
-    margin: 80px auto;
+    margin: 0 auto;
     background-color: #00C5AF;
     border: 0;
     border-radius: 35px;
-    width: 260px;
-    height: 55px;
+    width: 150px;
+    height: 40px;
     color: white;
-    font-family: 'PT Sans', sans-serif;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 13px;
     outline: none;
     cursor: pointer;
 }
@@ -90,91 +116,98 @@ a {
 }
 
 .first {
-    display: flex;
-    width: 800px;
-    margin: auto;
+    padding: 30px 0;
+    flex-wrap: wrap;
     background-color: #f0f1f1;
 }
 
 .first>div {
-    padding: 40px 40px;
+    height: 100%;
+    width: 40%;
     margin: auto;
     text-align: center;
 }
 
+.first>div:nth-child(3) {
+    padding-top: 30px;
+}
+
 .text {
-    font-family: 'PT Sans', sans-serif;
     font-weight: normal;
     color: #777B81;
-    font-size: 14px;
+    font-size: 12px;
+    text-align: center;
 }
 
 h4 {
     color: #3B464D;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: center;
 }
 
 .line {
     background-color: #E2E3E5;
-    width: 100%;
+    width: 80%;
     height: 2px;
-    margin: 20px auto 30px auto;
+    margin: 0 auto 20px auto;
 }
 
 .second {
     display: flex;
-    justify-content: space-evenly;
-    width: 800px;
-    margin: auto;
-    padding: 50px 0 20px;
+    flex-direction: column;
+    padding: 30px 0;
 }
 
-.second div:not(.long-line) {
-    padding: 0 80px;
-    flex: 0;
+.second img {
+    display: block;
+    width: 50%;
+}
+
+.second>div:nth-child(2) {
+    padding-top: 30px;
+}
+
+.second>div{
     font-family: 'PT Sans', sans-serif;
     font-weight: normal;
-    text-align: left;
     color: #777B81;
 }
 
 .read-more {
     width: 100px;
     height: 40px;
-    margin: 35px 0;
     font-weight: normal;
     cursor: pointer;
+    margin-top: 20px;
     font-size: 15px;
 }
 
 .long-line {
-    background: linear-gradient(to right, #E2E3E5, #f2f3f5);;
-    width: 100%;
+    background: linear-gradient(to right, #E2E3E5, #f2f3f5);
+    width: 60%;
+    margin: 15px auto;
     height: 2px;
-    margin: 10px 0 35px 0;
 }
 
 .third {
-    width: 800px;
-    margin: auto;
     background-color: #f0f1f1;
+    padding: 30px 0
 }
 
 .third>div {
-    padding: 60px 60px 20px 60px;
-    margin: auto;
+    text-align: center;
 }
 
 .third h4 {
     display: inline;
     position: relative;
     bottom: 5px;
-    left: 15px;
+    left: 5px;
 }
 
 .sec3-wrap {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .third button {
@@ -185,18 +218,28 @@ h4 {
 }
 
 .fourth {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 50px 0;
-    width: 800px;
-    margin: auto;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
 .fourth>div {
-    flex: 0;
+    width: 40%;
+    text-align: center;
+}
+
+.fourth img {
+    display: block;
+    width: 80%;
+}
+
+.fourth>div:nth-child(3) {
+    padding-top: 30px;
 }
 
 .fourth a {
+    display: block;
+    margin-top: 10px;
     color: #00C4AF;
 }
 
@@ -205,23 +248,25 @@ h4 {
 }
 
 .fifth {
-    display: flex;
-    width: 800px;
-    margin: auto;
+    flex-direction: column;
     background-color: #f0f1f1;
+    padding: 30px 0;
 }
 
-.fifth>div:not(.long-line) {
-    width: 35%;
-    padding: 60px 0 20px 0;
-    margin: auto;
+.fifth>div {
+    width: 80%;
+    text-align: center;
+}
+
+.fifth>div:nth-child(2) {
+    padding-top: 40px;
 }
 
 .fifth h4 {
     display: inline;
     position: relative;
     bottom: 8px;
-    left: 15px;
+    left: 5px;
 }
 
 .iconify {
@@ -231,15 +276,20 @@ h4 {
 }
 
 .sixth {
-    display: flex;
-    padding: 50px 0;
-    width: 800px;
-    margin: auto;
+    flex-direction: column;
+    padding: 30px 0;
 }
 
 .sixth>div {
-    width: 20%;
-    margin: auto;
+    width: 80%;
+}
+
+.sixth img {
+    display: block;
+}
+
+.sixth p {
+    padding: 0 20px;
 }
 
 .sixth button {
@@ -249,29 +299,22 @@ h4 {
     background-color: #a5a9ae;
 }
 
-.content {
-    flex-basis: 40%;
-}
-
 .seven {
-    display: flex;
     flex-direction: column;
-    padding: 50px 0;
-    width: 800px;
-    margin: auto;
+    padding: 10px 0;
     background-color: #00C1A6;
 }
 
 .typo {
-    width: 40%;
-    margin: auto;
+    width: 90%;
+    height: 30%;
+    text-align: center;
 }
 
-.typo h4 {
+.typo>h4 {
     display: inline;
     position: relative;
     bottom: 5px;
-    left: 5px;
     color: #FFFFFF;
 }
 
@@ -282,49 +325,40 @@ h4 {
 .seven .line {
     background-color: #00d1ba;
     opacity: .4;
+    margin: 5px auto;
 }
 
 .firms {
     display: flex;
-    font-size: 30px;
+    flex-wrap: wrap;
+    font-size: 20px;
     color: #A5EDE4;
 }
 
-.firms div {
-    flex: 1;
-    padding: 0 40px;
+.firms>div {
+    margin: auto;
+    padding: 0 10px;
 }
 
-.firms>div:nth-child(4) {
-    font-family: 'Muli', sans-serif;
-}
 .firms>div:nth-child(3) {
-    font-family: 'Ubuntu', sans-serif;
     font-weight: lighter;
 }
 
-.firms>div:nth-child(2) {
-    font-family: 'Raleway', sans-serif;
-}
-
-.firms>div:nth-child(1) {
-    font-family: 'Dancing Script', cursive;
-}
-
 footer {
-    display: flex;
-    width: 800px;
-    margin: auto;
-    padding: 10px;
+    display: inline-flex;
+    height: 100%;
+    padding: 5px 0;
 }
+
 footer div {
-    position: relative;
-    top: 15px;
+    vertical-align: middle;
 }
 
 footer div:nth-child(1) {
-    padding: 0 35px;
-    flex-basis: 75%;
+    flex-basis: 70%;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 12px;
     color: #C4C6C6;
 }
 
@@ -333,32 +367,164 @@ footer div:nth-child(1):before {
     color: #4e5050;
 }
 
-/*Width for Ipad*/
+footer .iconify {
+    font-size: 15px;
+}
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-    header, .first, .second, .third, .fourth, .fifth, .sixth, .seven, footer {
-        width: 100%;
+/*width for IphoneX*/
+
+@media screen and (min-width: 320px) and (max-width: 549px) {
+
+    .left-line {
+        display: none;
     }
 
+    .right-line {
+        display: block;
+        margin: 20px auto;
+        width: 80px;
+    }
+
+}
+
+/* For Iphone 6/7/8 plus */
+
+@media screen and (min-width: 550px) {
+    header {
+        background-image: url("./img/main-for-IphoneX.png");
+    }
+
+    .elena {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .good-day {
+        font-size: 40px;
+        margin: 40px auto;
+    }
+
+    .themeforest {
+        font-size: 15px;
+        margin: 30px auto;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    .nav-bar li {
+        font-size: 16px;
+    }
+
+    .left-line, .right-line {
+        background-color: #899085;
+    }
+
+    .first {
+        flex-direction: row;
+    }
+
+    .first>div {
+        margin: 0 auto;
+        width: 25%;
+    }
+
+    .first>div:nth-child(3) {
+        padding: 0;
+    }
+
+    .first>div:nth-child(3)>img {
+        height: 34px;
+    }
+}
+
+/*Width for Ipad*/
+
+@media screen and (min-width: 768px) {
     header {
         background-image: url("./img/main-768.png");
+        height: 500px;
+    }
 
+    .elena {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    .good-day {
+        font-size: 50px;
+        margin: 60px auto;
+    }
+
+    .themeforest {
+        font-size: 18px;
+        margin: 50px auto;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .nav-bar li {
+        font-size: 18px;
+    }
+
+    .left-line, .right-line {
+        background-color: #4b5246;
     }
 
     .long-line {
         width: 70%;
-        margin: 10px auto 35px;
     }
 
     .third .long-line {
         width: 100%;
     }
 
-    .second div:not(.long-line) {
-        padding: 0 40px;
+    .third>div {
+        text-align: center;
+        width: 80%;
+        margin: auto;
     }
+
+    .second {
+        flex-direction: row;
+    }
+
+    .second img {
+        width: 80%;
+    }
+    .second>div {
+        width: 40%;
+    }
+
+    .second>div:nth-child(2) {
+        padding-top: 0;
+    }
+
+    .fifth {
+        flex-direction: row;
+    }
+
+    .fifth>div {
+        width: 40%;
+    }
+
+    .fifth>div:nth-child(2) {
+        padding: 0;
+    }
+
     .sixth>div {
-        width: 35%;
+        width: 60%;
     }
     .firms {
         font-size: 24px;
@@ -372,237 +538,113 @@ footer div:nth-child(1):before {
         position: relative;
         top: 15px;
     }
-    footer div:nth-child(1) {
-        flex-basis: 70%;
+
+    footer .text {
+        font-size: 20px;
     }
 
-    .good-day {
-        font-size: 50px;
-    }
+
 }
 
-/*width for IphoneX*/
-
-@media screen and (min-width: 320px) and (max-width: 414px) {
-    header, .first, .second, .third, .fourth, .fifth, .sixth, .seven, footer {
-        width: 100%;
-        height: 400px;
-    }
-
-    .elena {
-        padding: 20px 0;
-    }
-
-    .nav-bar li {
-        font-size: 13px;
-    }
-    .good-day {
-        font-size: 30px;
-        margin: 40px 0 30px 0;
-    }
-
-    .themeforest {
-        font-size: 15px;
-        padding-top: 15px;
-    }
-
-    .get-copy {
-        margin: 25px auto;
-        width: 130px;
-        height: 40px;
-        font-size: 11px;
-    }
-
-    .left-line {
-        display: none;
-    }
-
-    .right-line {
-        display: block;
-        margin: 20px auto;
-        width: 80px;
-    }
-
-    .first {
-        flex-wrap: wrap;
-        height: 410px;
-        padding: 0;
-    }
-
-    .first>div {
-        padding: 0 20px;
-        margin: 30px auto;
-        text-align: center;
-        width: 35%;
-    }
-
-    .first>div:nth-child(3) {
-        margin: 0 auto 20px;
-    }
-
-    .line {
-        margin: 0 auto 20px auto;
-    }
-
-    .long-line {
-        margin-bottom: 10px;
-    }
-
-    .second {
-        flex-wrap: wrap;
-        height: 755px;
-        padding: 30px 0 0 0;
-    }
-
-    .second>div {
-        height: 390px;
-    }
-
-    .read-more {
-        margin: 20px auto 0;
-    }
-
-    .text, h4 {
-        text-align: center;
-    }
-
-    .third {
-        height: 245px;
-    }
-
-    .third h4 {
-        left: 5px;
-    }
-
-    .third>div {
-        padding: 30px;
-        margin: auto;
-        text-align: center;
-    }
-
-    .fourth {
-        flex-wrap: wrap;
-        height: 540px;
-        padding: 30px 0 0 0;
-    }
-
-    .fourth>div {
-        width: 45%;
-        text-align: center;
-        flex-basis: inherit;
-    }
-
-    h4 {
-        font-size: 15px;
-    }
-
-    .text {
-        font-size: 12px;
-    }
-    .long-line, .third .long-line {
-        width: 70%;
-        margin: 0 auto;
-    }
-
-    .fourth img {
-        display: block;
-        margin: auto;
-        width: 80%;
-    }
-
-    .fourth>div:nth-child(3) {
-        padding-top: 10px;
-    }
-
-    .fifth {
-        height: 310px;
-    }
-    .fifth>div:not(.long-line) {
-        padding: 0;
-        margin: 30px auto;
-    }
-
-    .fifth h4{
-        display: block;
-        position: static;
-        bottom: 8px;
-    }
-
-    .fifth .iconify {
-        display: block;
-        margin: auto;
-    }
-
-    .sixth {
-        flex-direction: column;
-        height: 410px;
-        padding: 24px 0;
-    }
-    .sixth>div {
-        width: 70%;
-
-    }
-
-    .sixth img {
-        display: block;
-        margin: auto;
-    }
-
-    .seven {
-        height: 95px;
-        padding: 0 0 10px 0;
-    }
-    .firms {
-        flex-flow: column wrap;
-        font-size: 15px;
-        height: 50%;
-    }
-
-    .firms>div {
-        height: 40%;
-        margin: auto;
-        flex-basis: inherit;
-    }
-
-    .typo {
-        width: 75%;
-        height: 30%;
-    }
-
-    .content h4 {
-        text-align: center;
-        position: relative;
-        top: 15px;
-    }
-
-    footer {
-        height: 30px;
-        padding: 0;
-    }
-    footer div:nth-child(1) {
-        flex-basis: 80%;
-        padding: 0;
-        font-size: 12px;
-    }
-
-    footer .iconify {
-        font-size: 15px;
-    }
-}
-
+/* For Ipad pro and Laptops*/
 @media screen and (min-width: 1024px){
-    header, .first, .second, .third, .fourth, .fifth, .sixth, .seven, footer {
-        width: 1024px;
-    }
     header {
         background-image: url("./img/main-large.jpg");
     }
 
-    .first img {
-        width: 25%;
+    header, section, footer {
+        max-width: 1400px;
     }
+
+    header, .first, .second, .third, .fourth, .fifth, .sixth, .seven {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .left-line, .right-line {
+        background-color: #a1b5b4;
+    }
+
+    .first>div>img, .first>div:nth-child(3)>img {
+        height: 50px;
+    }
+
+    .second {
+        text-align: left;
+    }
+
+    .second>div>div:nth-child(2) {
+        width: 80%;
+    }
+
+    h4, .text, .fifth>div {
+        text-align: left;
+    }
+
+    .first h4, .first .text {
+        text-align: center;
+    }
+
+    .read-more {
+        margin-left: 0;
+    }
+
+    .third>div {
+        margin: 0 10%;
+        text-align: left;
+    }
+
+    .fourth {
+        justify-content: space-evenly;
+
+    }
+
+    .fourth>div {
+        width: 20%;
+        margin: 0;
+    }
+
+    .fourth>div:nth-child(3) {
+        padding-top: 0;
+    }
+
+    .fourth img {
+        margin: 0;
+        width: 100%;
+    }
+
     h4, .nav-bar li {
-        font-size: 20px;
+        font-size: 23px;
+    }
+
+    .fifth>div {
+        width: 30%
+    }
+
+    .sixth {
+        flex-direction: row;
+    }
+
+    .sixth .text, .sixth h4 {
+        padding: 0;
+        text-align: left;
+        width: 70%;
+    }
+
+    .sixth img {
+        width: 60%;
+    }
+
+    .sixth h4 {
+        margin: 0;
+    }
+
+    .sixth .long-line {
+        margin: 30px 0;
+    }
+
+    .seven .line {
+        margin: 10px auto;
     }
 
     .text {
@@ -631,46 +673,48 @@ footer div:nth-child(1):before {
         width: 150px;
         height: 50px;
         font-size: 20px;
+        margin-top: 50px;
     }
 
-    .sixth {
-        height: 245px;
+    .get-copy {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
     }
 
-    .content h4 {
-        margin-top: 0;
+    .firms {
+        font-size: 40px;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
     }
 
     footer {
         height: 50px;
     }
 
-    footer .iconify {
-        font-size: 30px;
+    footer div {
+        position: relative;
     }
 
-}
-
-@media screen and (min-width: 414px) and (max-width: 767px){
-    header, .first, .second, .third, .fourth, .fifth, .sixth, .seven, footer {
-        width: 100%;
-    }
-    header {
-        background-image: url("./img/main-for-IphoneX.png");
-    }
-    .nav-bar li {
-        font-size: 15px;
-    }
-    .good-day {
-        font-size: 35px;
-        margin: 40px 0 30px 0;
+    footer div:nth-child(1) {
+        top: 15px;
     }
 
-    .themeforest {
+    footer div:nth-child(2) {
+        top: 10px;
+    }
+
+    footer div:nth-child(1) {
         font-size: 20px;
-        padding-top: 15px;
     }
+
+    footer .iconify {
+        font-size: 35px;
+    }
+
 }
+
+
 
 @media screen and (max-width: 600px) {
 
