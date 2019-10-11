@@ -41,6 +41,14 @@ header {
     padding: 30px 0;
 }
 
+#menu-toggle, .menu-btn {
+    display: none;
+}
+
+.me {
+   display: none;
+}
+
 .nav-bar {
     display: flex;
     padding-left: 0;
@@ -371,9 +379,13 @@ footer .iconify {
     font-size: 15px;
 }
 
-/*width for IphoneX*/
+/*width for Iphone:not(Plus)*/
 
 @media screen and (min-width: 320px) and (max-width: 549px) {
+
+    .second>div>div:nth-child(2) {
+        width: 80%;
+    }
 
     .left-line {
         display: none;
@@ -385,6 +397,77 @@ footer .iconify {
         width: 80px;
     }
 
+    .good-day {
+        margin: 0 0 40px 0;
+    }
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 30px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .me {
+        display: block;
+        width: 100%;
+        margin-top: 90%;
+    }
+
+    .me p {
+        color: #8f9898;
+        font-size: 15px;
+    }
+    .nav-bar {
+        display: block;
+    }
+
+    .nav-bar a {
+        color: #f8f9fb;
+        font-size: 16px;
+    }
+
+    nav {
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        padding: 80px 0;
+        text-align: center;
+        z-index: 1;
+        background-color: #205253;
+        box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
+    }
+
+    .nav-bar li {
+        display: block;
+        padding: 20px 0;
+    }
+    ul li:hover {
+        background-color: #3f9b9c;
+        cursor: pointer;
+    }
+
+    .show-menu {
+        font-size: 40px;
+        color: #718d90;
+    }
+
+    #menu-toggle:checked ~ nav {
+        visibility: visible;
+        left: 0;
+    }
+
+    #menu-toggle:checked ~ .menu-btn > span  {
+        transform: rotate(180deg);
+    }
 }
 
 /* For Iphone 6/7/8 plus */
@@ -441,6 +524,15 @@ footer .iconify {
     .first>div:nth-child(3)>img {
         height: 34px;
     }
+
+    footer div:nth-child(1) {
+        font-size: 16px;
+    }
+
+    footer .iconify {
+        font-size: 20px;
+    }
+
 }
 
 /*Width for Ipad*/
@@ -539,8 +631,12 @@ footer .iconify {
         top: 15px;
     }
 
-    footer .text {
-        font-size: 20px;
+    footer div:nth-child(1) {
+        font-size: 18px;
+    }
+
+    footer .iconify {
+        font-size: 25px;
     }
 
 
