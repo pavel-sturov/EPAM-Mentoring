@@ -36,7 +36,7 @@ body, p{
 }
 
 header {
-    background-image: url("./img/main.png");
+    background-image: url("img/main-xs.png");
     background-size: cover;
     padding: 30px 0;
 }
@@ -205,6 +205,7 @@ h4 {
 
 .third>div {
     text-align: center;
+    width: 80%;
 }
 
 .third h4 {
@@ -294,6 +295,7 @@ h4 {
 
 .sixth img {
     display: block;
+    width: 60%;
 }
 
 .sixth p {
@@ -416,7 +418,7 @@ footer .iconify {
     .me {
         display: block;
         width: 100%;
-        margin-top: 90%;
+        margin-top: 20%;
     }
 
     .me p {
@@ -474,7 +476,7 @@ footer .iconify {
 
 @media screen and (min-width: 550px) {
     header {
-        background-image: url("./img/main-for-IphoneX.png");
+        background-image: url("img/main-s.png");
     }
 
     .elena {
@@ -539,7 +541,7 @@ footer .iconify {
 
 @media screen and (min-width: 768px) {
     header {
-        background-image: url("./img/main-768.png");
+        background-image: url("img/main-m.png");
         height: 500px;
     }
 
@@ -580,12 +582,6 @@ footer .iconify {
 
     .third .long-line {
         width: 100%;
-    }
-
-    .third>div {
-        text-align: center;
-        width: 80%;
-        margin: auto;
     }
 
     .second {
@@ -645,7 +641,7 @@ footer .iconify {
 /* For Ipad pro and Laptops*/
 @media screen and (min-width: 1024px){
     header {
-        background-image: url("./img/main-large.jpg");
+        background-image: url("img/main-l.jpg");
     }
 
     header, section, footer {
