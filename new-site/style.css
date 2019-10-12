@@ -102,11 +102,6 @@ a {
     cursor: pointer;
 }
 
-li a:hover {
-    color: #00C5AF;
-    text-shadow: 1px 1px 2px #4c4c4c, 0 0 1em #edfdff;
-}
-
 .get-copy, .read-more {
     display: block;
     margin: 0 auto;
@@ -480,6 +475,11 @@ footer .iconify {
 @media screen and (min-width: 550px) {
     header {
         background-image: url("img/main-s.png");
+    }
+
+    li a:hover {
+        color: #00C5AF;
+        text-shadow: 1px 1px 2px #111111, 0 0 1em #edfdff;
     }
 
     .elena {
