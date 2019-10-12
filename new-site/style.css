@@ -428,6 +428,7 @@ footer .iconify {
     }
 
     .nav-bar a {
+        display: block;
         color: #f8f9fb;
         font-size: 16px;
     }
@@ -448,7 +449,8 @@ footer .iconify {
 
     .nav-bar li {
         display: block;
-        padding: 20px 0;
+        height: 50px;
+        line-height: 50px;
     }
     ul li:hover {
         background-color: #3f9b9c;
