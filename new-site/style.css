@@ -1,4 +1,4 @@
-body, p{
+body, p {
     margin: 0;
     padding: 0;
 }
@@ -63,7 +63,6 @@ h3, h1, a{
     color: white;
 }
 
-
 .elena {
     padding-bottom: 20px;
     font-family: 'Niconne', cursive;
@@ -99,7 +98,6 @@ h3, h1, a{
 
 a {
     text-decoration: none;
-    cursor: pointer;
 }
 
 .get-copy, .read-more {
@@ -220,6 +218,7 @@ h4 {
 .third button {
     background-color: #D2D6DB;
 }
+
 .third button:hover {
     background-color: #a5a9ae;
 }
@@ -303,6 +302,7 @@ h4 {
 .sixth button {
     background-color: #D2D6DB;
 }
+
 .sixth button:hover {
     background-color: #a5a9ae;
 }
@@ -381,8 +381,7 @@ footer .iconify {
 
 /*width for Iphone:not(Plus)*/
 
-@media screen and (min-width: 320px) and (max-width: 549px) {
-
+@media screen and (min-width: 320px) and (max-width: 575px) {
     .second>div>div:nth-child(2) {
         width: 80%;
     }
@@ -452,6 +451,7 @@ footer .iconify {
         height: 50px;
         line-height: 50px;
     }
+
     ul li:hover {
         background-color: #3f9b9c;
         cursor: pointer;
@@ -474,7 +474,7 @@ footer .iconify {
 
 /* For Iphone 6/7/8 plus */
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 576px) {
     header {
         background-image: url("img/main-s.png");
     }
@@ -539,14 +539,13 @@ footer .iconify {
     footer .iconify {
         font-size: 20px;
     }
-
 }
 
 /*Width for Ipad*/
 
 @media screen and (min-width: 768px) {
     header {
-        background-image: url("img/main-m.png");
+        background-image: url("img/main-m.jpg");
         height: 500px;
     }
 
@@ -596,6 +595,7 @@ footer .iconify {
     .second img {
         width: 80%;
     }
+
     .second>div {
         width: 40%;
     }
@@ -639,12 +639,17 @@ footer .iconify {
     footer .iconify {
         font-size: 25px;
     }
+}
 
-
+@media screen and (min-width: 992px) {
+    header {
+        background-image: url("img/main-xl.jpg");
+    }
 }
 
 /* For Ipad pro and Laptops*/
-@media screen and (min-width: 1024px){
+
+@media screen and (min-width: 1200px) {
     header {
         background-image: url("img/main-l.jpg");
     }
@@ -808,11 +813,4 @@ footer .iconify {
     footer .iconify {
         font-size: 35px;
     }
-
-}
-
-
-
-@media screen and (max-width: 600px) {
-
 }
