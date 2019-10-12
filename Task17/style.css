@@ -381,7 +381,7 @@ footer .iconify {
 
 /*width for Iphone:not(Plus)*/
 
-@media screen and (min-width: 320px) and (max-width: 549px) {
+@media screen and (min-width: 320px) and (max-width: 575px) {
     .second>div>div:nth-child(2) {
         width: 80%;
     }
@@ -474,7 +474,7 @@ footer .iconify {
 
 /* For Iphone 6/7/8 plus */
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 576px) {
     header {
         background-image: url("img/main-s.png");
     }
@@ -545,7 +545,7 @@ footer .iconify {
 
 @media screen and (min-width: 768px) {
     header {
-        background-image: url("img/main-m.png");
+        background-image: url("img/main-m.jpg");
         height: 500px;
     }
 
@@ -641,9 +641,15 @@ footer .iconify {
     }
 }
 
+@media screen and (min-width: 992px) {
+    header {
+        background-image: url("img/main-xl.jpg");
+    }
+}
+
 /* For Ipad pro and Laptops*/
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1200px) {
     header {
         background-image: url("img/main-l.jpg");
     }
