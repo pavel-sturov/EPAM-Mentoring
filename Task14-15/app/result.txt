@@ -1,0 +1,14 @@
+Start checking at Wed Oct 02 2019 11:36:58 GMT+0300 (Moscow Standard Time)
+-------
+Please check the url 'http://faledadresstotestapp.su', it may be wrong!
+ - Error code: 400
+-------
+https://en.wikipedia.org/wiki/Main_Page - 80 points
+https://www.google.com/?gws_rd=ssl - 92 points
+https://github.com/ - 41 points
+http://learn.javascript.ru/ - 91 points
+https://www.npmjs.com/ - 75 points
+https://medium.com/ - 80 points
+https://habr.com/ru/ - 36 points
+https://www.facebook.com/ - 84 points
+End checking at Wed Oct 02 2019 11:37:15 GMT+0300 (Moscow Standard Time)
